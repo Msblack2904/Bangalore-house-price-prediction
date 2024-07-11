@@ -29,7 +29,7 @@ def main():
           output = round(predict_price(location,sqft,bath,bhk),2)
           st.success(f"The price is Rs. {output} Lakh")
         except:
-          st.exception(ValueError("Enter a valid input for area."))
+          st.exception(ValueError("Enter a valid input area."))
 
 
 if __name__=='__main__':
