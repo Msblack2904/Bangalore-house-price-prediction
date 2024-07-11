@@ -19,7 +19,7 @@ def predict_price(location,sqft,bath,bhk):
 
     return model.predict([x])[0]
 def main():
-    st.title("Bangalore house price prediction")
+    st.title("Bangalore House Price Prediction")
     location = st.selectbox('Location:',location_)
     sqft = st.text_input('Area (square feet):')
     bath = st.selectbox('Number of Bathrooms:', [1,2,3,4,5,6,7,8,9,10])
